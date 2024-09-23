@@ -1,0 +1,161 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #4caf50;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .hero {
+            background-image: url('https://images.pexels.com/photos/947914/pexels-photo-947914.jpeg?cs=srgb&dl=pexels-olly-947914.jpg&fm=jpg');
+            background-size: cover;
+            height: 400px;
+            color: white;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero h2 {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+        }
+        .products {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+        .product-card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        }
+        .product-card img {
+            width: 100%;
+        }
+        .product-card h3 {
+            padding: 15px;
+        }
+        .product-card p {
+            color: #333;
+            padding: 0 15px 15px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Blossom Flower Shop</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Shop</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <div class="hero">
+        <h2>Fresh Flowers Delivered to Your Doorstep</h2>
+    </div>
+
+    <section class="products">
+        <div class="product-card">
+            <img src="https://lafleur.in/wp-content/uploads/2019/05/DSC06202-scaled.jpg" alt="Rose Bouquet">
+            <h3>Rose Bouquet</h3>
+            <p>$29.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRajLj9MWso0nLUcufee9hEWyvulQ-7oHCRn1IeIR_Rv-8VEkXbaRBy5YI3ForKgLQNovg&usqp=CAU" alt="Tulip Arrangement">
+            <h3>Tulip Arrangement</h3>
+            <p>$19.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://blacktulipflowers.in/wp-content/uploads/2023/09/05A.jpg" alt="Lily Bouquet">
+            <h3>Lily Bouquet</h3>
+            <p>$24.99</p>
+        </div>
+        <div class="product-card">
+            <img src="https://www.gardendesign.com/pictures/images/675x529Max/site_3/paradiso-pink-mum-fall-flower-proven-winners_14469.jpg" alt="Tulip Arrangement">
+            <h3>chrysanthemum</h3>
+            <p>$190.99</p>
+      </div>
+       <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsO21H5WILdwREGYYGJUj19QkYiPKa2khInA&s" alt="Tulip Arrangement">
+            <h3>Mari gold</h3>
+            <p>$230.99</p>
+      </div>
+       <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZaYAObobytFJfflBA-D5V_SHiSxfWGRf2fg&s" alt="Tulip Arrangement">
+            <h3>Dahlia</h3>
+            <p>640.99</p>
+      </div>
+       <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhigU5Aj29O5YVBODFbLM83NdVXX4NdreZ6w&s"alt="Tulip Arrangement">
+            <h3>Jasmine</h3>
+            <p>$530.99</p>
+      </div>
+       <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tq-Gzw35MadOV3V1bCGBUBCa2Ej8Sfmh_g&s" alt="Tulip Arrangement">
+            <h3>lilac</h3>
+            <p>$790.99</p>
+      </div>
+       <div class="product-card">
+            <img src="https://www.bakeshake.co.in/image/cache/catalog/products/lavender%20pink%20artificial%20rose%20flowers%201-600x315w.jpg" alt="Tulip Arrangement">
+            <h3>Lavender rose flowers</h3>
+            <p>$270.99</p>
+      </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blossom Flower Shop - All Rights Reserved</p>
+    </footer>
+
+</body>
