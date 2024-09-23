@@ -1,0 +1,124 @@
+html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .calculator {
+            background-color: #333;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .calculator-screen {
+            width: 100%;
+            height: 60px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 2em;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .calculator-buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 10px;
+        }
+
+        .btn {
+            padding: 20px;
+            font-size: 1.5em;
+            border: none;
+            background-color: #444;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn:hover {
+            background-color: #666;
+        }
+
+        .equal-btn {
+            grid-column: span 2;
+            background-color: #1c87c9;
+        }
+
+        .equal-btn:hover {
+            background-color: #3ba9ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" class="calculator-screen" id="screen" readonly />
+
+        <div class="calculator-buttons">
+            <button class="btn" onclick="clearScreen()">C</button>
+            <button class="btn" onclick="deleteNumber()">DEL</button>
+            <button class="btn" onclick="appendNumber('/')">/</button>
+            <button class="btn" onclick="appendNumber('*')">*</button>
+
+            <button class="btn" onclick="appendNumber('7')">7</button>
+            <button class="btn" onclick="appendNumber('8')">8</button>
+            <button class="btn" onclick="appendNumber('9')">9</button>
+            <button class="btn" onclick="appendNumber('-')">-</button>
+
+            <button class="btn" onclick="appendNumber('4')">4</button>
+            <button class="btn" onclick="appendNumber('5')">5</button>
+            <button class="btn" onclick="appendNumber('6')">6</button>
+            <button class="btn" onclick="appendNumber('+')">+</button>
+
+            <button class="btn" onclick="appendNumber('1')">1</button>
+            <button class="btn" onclick="appendNumber('2')">2</button>
+            <button class="btn" onclick="appendNumber('3')">3</button>
+            <button class="btn equal-btn" onclick="calculate()">=</button>
+
+            <button class="btn" onclick="appendNumber('0')">0</button>
+            <button class="btn" onclick="appendNumber('.')">.</button>
+        </div>
+    </div>
+
+    <script>
+        function clearScreen() {
+            document.getElementById("screen").value = "";
+        }
+
+        function deleteNumber() {
+            let screen = document.getElementById("screen");
+            screen.value = screen.value.slice(0, -1);
+        }
+
+        function appendNumber(number) {
+            let screen = document.getElementById("screen");
+            screen.value += number;
+        }
+
+        function calculate() {
+            let screen = document.getElementById("screen");
+            try {
+                screen.value = eval(screen.value);
+            } catch (error) {
+                screen.value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>
