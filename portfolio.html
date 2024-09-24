@@ -1,0 +1,236 @@
+<DOCTYPE html>
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: #00BCD4;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .profile h1 {
+            margin: 10px 0;
+            font-size: 2rem;
+        }
+
+        .profile p {
+            font-size: 1.2rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 40px 0;
+            background-color: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .skills-list {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .skills-list li {
+            margin: 0 15px;
+            font-size:1.2rem;
+       }
+      #contact p {
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        /* Education Section */
+        .education-list {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        .education-list li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        /* Experience Section */
+        .experience-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .experience {
+            background-color: #f9f9f9;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            text-align: center;
+        }
+
+        .experience h3 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        .experience p {
+            font-size: 1rem;
+        }
+
+        /* Social Media Links */
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .social-media a:hover {
+            color: #007bff;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="profile">
+                <img src="profile.jpg" alt="Profile Photo">
+                <h1>Mohitha Dasari </h1>
+                <p>Web Designer | Engineer</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hello! I am a passionate developer with experience in front-end and back-end development. I enjoy creating sleek, responsive websites and improving user experiences. My journey in the tech world started when...</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="education-list">
+                <li>Bachelor of Technology in Electrical and electronics  - gudlavalleru engineering college (2026)</li>
+                <li>Intermediate in Sri Chaitanya jumior college-Eluru 
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>HTML & CSS</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Python</li>
+            </ul>
+        </div>
+  </section>
+  <section id="contact">
+          <div class="container">
+            <h2>Contact</h2>
+            <p>Email: mohitha.valli280105.com</p>
+            <p>Phone: 9963546554</p>
+            <p>Location: Hyderabad, India</p>
+
+            <div class="social-media">
+                <h3>Follow Me</h3>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 D.Mohitha. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
